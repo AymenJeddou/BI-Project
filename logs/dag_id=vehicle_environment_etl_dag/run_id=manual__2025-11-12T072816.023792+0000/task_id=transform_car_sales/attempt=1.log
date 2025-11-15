@@ -1,0 +1,14 @@
+{"timestamp":"2025-11-12T07:29:06.825699Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-12T07:29:06.845101Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/vehicle_environment_etl_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-12T07:29:06.988635Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/vehicle_environment_etl_dag.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2025-11-12T07:29:06.988891Z","level":"warning","event":"The `airflow.operators.empty.EmptyOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.empty.EmptyOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/vehicle_environment_etl_dag.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2025-11-12T07:29:07.955529Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-12T07:29:07.956996Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-12T07:29:07.961507Z","level":"info","event":"Current task name:transform_car_sales","logger":"task.stdout"}
+{"timestamp":"2025-11-12T07:29:07.975441Z","level":"info","event":"Dag name:vehicle_environment_etl_dag","logger":"task.stdout"}
+{"timestamp":"2025-11-12T07:29:07.967018Z","level":"info","event":"Transforming staged car sales data...","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":311}
+{"timestamp":"2025-11-12T07:29:08.814154Z","level":"info","event":"Saved 443 transformed sales records to /opt/airflow/dags/data/sales_transformed.csv","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":327}
+{"timestamp":"2025-11-12T07:29:08.814830Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-11-12T07:29:09.085459Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-12T07:29:09.087851Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-12T07:29:09.089297Z","level":"info","event":"Task operator:<Task(PythonOperator): transform_car_sales>","logger":"task.stdout"}

@@ -1,0 +1,21 @@
+{"timestamp":"2025-11-15T18:17:24.126749Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-15T18:17:24.129726Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/vehicle_environment_etl_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-15T18:17:24.202880Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/vehicle_environment_etl_dag.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2025-11-15T18:17:24.203244Z","level":"warning","event":"The `airflow.operators.empty.EmptyOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.empty.EmptyOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/vehicle_environment_etl_dag.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2025-11-15T18:17:24.295004Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-15T18:17:24.295787Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-15T18:17:24.296876Z","level":"info","event":"Current task name:load_gtfs","logger":"task.stdout"}
+{"timestamp":"2025-11-15T18:17:24.297683Z","level":"info","event":"Dag name:transport_sector_etl_dag","logger":"task.stdout"}
+{"timestamp":"2025-11-15T18:17:24.300071Z","level":"info","event":"Loading GTFS data into PostgreSQL...","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":500}
+{"timestamp":"2025-11-15T18:17:24.502593Z","level":"info","event":"Loaded 1 rows into agency","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":507}
+{"timestamp":"2025-11-15T18:17:24.607567Z","level":"info","event":"Loaded 12 rows into calendar_dates","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":507}
+{"timestamp":"2025-11-15T18:17:25.179181Z","level":"info","event":"Loaded 8100 rows into fare_attributes","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":507}
+{"timestamp":"2025-11-15T18:17:25.643520Z","level":"info","event":"Loaded 8100 rows into fare_rules","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":507}
+{"timestamp":"2025-11-15T18:17:26.009508Z","level":"info","event":"Loaded 4071 rows into fiches_horaires_et_plans","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":507}
+{"timestamp":"2025-11-15T18:17:26.113784Z","level":"info","event":"Loaded 45 rows into routes","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":507}
+{"timestamp":"2025-11-15T18:17:26.343649Z","level":"info","event":"Loaded 916 rows into stops","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":507}
+{"timestamp":"2025-11-15T18:17:33.024734Z","level":"info","event":"Loaded 20571 rows into trips","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":507}
+{"timestamp":"2025-11-15T18:17:33.026405Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-11-15T18:17:33.050718Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-15T18:17:33.051331Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-15T18:17:33.051860Z","level":"info","event":"Task operator:<Task(PythonOperator): load_gtfs>","logger":"task.stdout"}

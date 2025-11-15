@@ -1,0 +1,14 @@
+{"timestamp":"2025-11-12T06:29:28.786265Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-12T06:29:28.790090Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/vehicle_environment_etl_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-12T06:29:28.836115Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/vehicle_environment_etl_dag.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2025-11-12T06:29:28.836605Z","level":"warning","event":"The `airflow.operators.empty.EmptyOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.empty.EmptyOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/vehicle_environment_etl_dag.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2025-11-12T06:29:28.980531Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-12T06:29:28.981655Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-12T06:29:28.982848Z","level":"info","event":"Current task name:load_crashes","logger":"task.stdout"}
+{"timestamp":"2025-11-12T06:29:28.983892Z","level":"info","event":"Dag name:vehicle_environment_etl_dag","logger":"task.stdout"}
+{"timestamp":"2025-11-12T06:29:28.985514Z","level":"info","event":"Loading transformed crash data into database...","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":210}
+{"timestamp":"2025-11-12T06:31:38.690573Z","level":"info","event":"Loaded 205539 crash records into crash_reporting table.","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":216}
+{"timestamp":"2025-11-12T06:31:38.831743Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-11-12T06:31:38.879202Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-12T06:31:38.880100Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-12T06:31:38.881073Z","level":"info","event":"Task operator:<Task(PythonOperator): load_crashes>","logger":"task.stdout"}

@@ -1,0 +1,21 @@
+{"timestamp":"2025-11-15T18:17:11.891453Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-15T18:17:11.905067Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/vehicle_environment_etl_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-15T18:17:12.105455Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/vehicle_environment_etl_dag.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2025-11-15T18:17:12.105787Z","level":"warning","event":"The `airflow.operators.empty.EmptyOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.empty.EmptyOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/vehicle_environment_etl_dag.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2025-11-15T18:17:12.235467Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-15T18:17:12.238278Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-15T18:17:12.243693Z","level":"info","event":"Current task name:extract_gtfs","logger":"task.stdout"}
+{"timestamp":"2025-11-15T18:17:12.245416Z","level":"info","event":"Dag name:transport_sector_etl_dag","logger":"task.stdout"}
+{"timestamp":"2025-11-15T18:17:12.267683Z","level":"info","event":"Extracting GTFS CSVs...","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":473}
+{"timestamp":"2025-11-15T18:17:12.434145Z","level":"info","event":"Staged 1 rows from agency.csv to /opt/airflow/dags/data/agency_staged.csv","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":480}
+{"timestamp":"2025-11-15T18:17:12.471243Z","level":"info","event":"Staged 12 rows from calendar_dates.csv to /opt/airflow/dags/data/calendar_dates_staged.csv","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":480}
+{"timestamp":"2025-11-15T18:17:12.608679Z","level":"info","event":"Staged 8100 rows from fare_attributes.csv to /opt/airflow/dags/data/fare_attributes_staged.csv","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":480}
+{"timestamp":"2025-11-15T18:17:12.689756Z","level":"info","event":"Staged 8100 rows from fare_rules.csv to /opt/airflow/dags/data/fare_rules_staged.csv","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":480}
+{"timestamp":"2025-11-15T18:17:12.887337Z","level":"info","event":"Staged 4071 rows from fiches-horaires-et-plans.csv to /opt/airflow/dags/data/fiches_horaires_et_plans_staged.csv","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":480}
+{"timestamp":"2025-11-15T18:17:12.918873Z","level":"info","event":"Staged 45 rows from routes.csv to /opt/airflow/dags/data/routes_staged.csv","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":480}
+{"timestamp":"2025-11-15T18:17:13.068944Z","level":"info","event":"Staged 916 rows from stops.csv to /opt/airflow/dags/data/stops_staged.csv","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":480}
+{"timestamp":"2025-11-15T18:17:14.598925Z","level":"info","event":"Staged 20571 rows from trips.csv to /opt/airflow/dags/data/trips_staged.csv","logger":"root","filename":"vehicle_environment_etl_dag.py","lineno":480}
+{"timestamp":"2025-11-15T18:17:14.638809Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-11-15T18:17:14.849969Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-15T18:17:14.853018Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-15T18:17:14.855915Z","level":"info","event":"Task operator:<Task(PythonOperator): extract_gtfs>","logger":"task.stdout"}
