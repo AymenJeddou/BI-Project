@@ -16,8 +16,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Sets the data directory to dags/data/
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 
-# This is the correct connection string for your docker-compose.yaml
-DB_URL = "postgresql+psycopg2://airflow:airflow@postgres:5432/airflow"
+# Defaults to the Postgres service from docker-compose.yaml; override with ETL_DB_URL
+DB_URL = os.environ.get("ETL_DB_URL", "postgresql+psycopg2://airflow:airflow@postgres:5432/airflow")
 
 # Standard file names for our staging process
 # Raw files (must match your uploads in dags/data)
