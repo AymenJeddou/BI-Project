@@ -62,6 +62,7 @@ x-airflow-common:
     AIRFLOW__API_AUTH__JWT_SECRET: ${AIRFLOW_JWT_SECRET:?set AIRFLOW_JWT_SECRET in .env (see .env.example)}
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    ETL_DB_URL: ${ETL_DB_URL:-postgresql+psycopg2://airflow:airflow@postgres:5432/airflow}
     AIRFLOW__CORE__EXECUTION_API_SERVER_URL: 'http://airflow-apiserver:8089/execution/'
     # yamllint disable rule:line-length
     # Use simple http server on scheduler for health checks
