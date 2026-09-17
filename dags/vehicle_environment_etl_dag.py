@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from airflow import DAG
+from airflow.sdk import DAG
 from airflow.providers.standard.operators.python import PythonOperator
 from airflow.providers.standard.operators.empty import EmptyOperator
 from sqlalchemy import create_engine, text
